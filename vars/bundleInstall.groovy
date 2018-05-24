@@ -1,8 +1,10 @@
 def call() {
   node {
-    stage('Bundle Install') {
-      steps {
-        sh 'bundle install'
+    stages {
+      stage('Bundle Install') {
+        steps {
+          sh 'bundle install'
+        }
       }
     } 
   }

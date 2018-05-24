@@ -1,9 +1,9 @@
 def call() {
   node {
     stage('Bundle Install') {
-      script {
-        sh 'bundle install'
-      }
+      echo "Command Executed using the Library"
+      sh 'bundle install'
+      
     }
   }
 }

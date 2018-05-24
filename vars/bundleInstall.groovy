@@ -1,8 +1,4 @@
 def call() {
-  node {
-    stage('Bundle Install') {
-      echo "Command Executed using the Library"
-      ~/.rbenv/shims/bundle install
-    }
-  }
+  echo "Command Executed using the Library"
+  println "~/.rbenv/shims/bundle install".execute().text
 }
